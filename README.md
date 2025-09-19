@@ -1,6 +1,7 @@
 # EnterArmyDiscord-CPP
 
 **EnterArmyDiscord** is a lightweight C++ library for sending Discord messages and rich embeds via webhooks.  
+
 Easy to integrate — just include the header, link the DLL, and you're ready to send messages.  
 
 **This library is actively developed and will continue to receive new features and improvements.**
@@ -49,3 +50,8 @@ const char* webhook = "https://discord.com/api/webhooks/xxxx/yyyy";
 
 int status = EnterArmyDiscord::SendWebhook(webhook, "Hello normal message!");
 ```
+
+## Screenshots
+
+![Discord](discord.png)  
+![Code](code.png)
