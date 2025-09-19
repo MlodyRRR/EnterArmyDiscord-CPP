@@ -10,16 +10,13 @@ Easy to integrate — just include the header, link the DLL, and you're ready to
 
 ## Project Structure
 
-╔════════════════════════════════╗
-║ EnterArmyDiscord/              ║
-║ ├─ include/                    ║
-║ │  └─ EnterArmyDiscord.h       ║
-║ ├─ src/                        ║
-║ │  └─ EnterArmyDiscord.cpp     ║
-║ ├─ bin/                        ║
-║ │  └─ EnterArmyDiscord.dll     ║
-║ └─ dllmain.cpp                 ║
-╚════════════════════════════════╝
+EnterArmyDiscord/
+├─ include/
+│ └─ EnterArmyDiscord.h # Header file for includes 
+├─ bin/
+│ └─ EnterArmyDiscord.dll # Compiled DLL
+├─ lib/
+│ └─ EnterArmyDiscord.lib # Compiled Lib
 
 # Sending
 
