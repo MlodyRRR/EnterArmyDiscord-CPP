@@ -49,15 +49,18 @@ namespace EnterArmyDiscord {
 		std::string ToString() const;
 	};
 
+
 	class EAD_API DiscordWebhook {
 	public:
 		static int Send(const std::string& webhookUrl, const std::string& content);
 		static int SendEmbed(const std::string& webhookUrl, const std::string& embedJson);
+		static int SendFile(const std::string& webhookUrl, const std::string& filePath, const std::string& message = "");
 	};
 
 	extern "C" {
 		EAD_API int SendWebhook(const char* webhookUrl, const char* content);
 		EAD_API int SendEmbed(const char* webhookUrl, const char* embedJson);
+		EAD_API int SendFile(const char* webhookUrl, const char* filePath, const char* message = nullptr);
 	}
 
 }
