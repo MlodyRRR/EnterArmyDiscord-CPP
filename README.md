@@ -51,7 +51,16 @@ const char* webhook = "https://discord.com/api/webhooks/xxxx/yyyy";
 int status = EnterArmyDiscord::SendWebhook(webhook, "Hello normal message!");
 ```
 
+# Send File
+```
+const char* webhook = "https://discord.com/api/webhooks/xxxx/yyyy";
+
+int fileStatus = EnterArmyDiscord::SendFile(webhook, "E:\\test.txt", "OPTIONAL MESSAGE");
+std::cout << "File status: " << fileStatus << std::endl;
+```
+
 ## Screenshots
 
 ![Discord](discord.png)  
 ![Code](code.png)
+![Sendfile](sendfile.png)
